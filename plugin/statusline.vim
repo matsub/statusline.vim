@@ -4,7 +4,7 @@ let s:notice = 10
 let s:font = 15
 let s:off = 8
 
-function statusline#set_color(color1, color2)
+function! statusline#set_color(color1, color2)
 	exec "hi Base ctermfg=".s:notice ." ctermbg=".s:base
 	exec "hi Level1 ctermfg=".s:base ." ctermbg=".a:color1
 	exec "hi Level2 ctermfg=".s:base ." ctermbg=".a:color2
