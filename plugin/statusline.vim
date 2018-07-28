@@ -5,13 +5,13 @@ let s:font = 15
 let s:off = 8
 
 function! statusline#set_color(color1, color2)
-	exec "hi Base ctermfg=".s:notice ." ctermbg=".s:base
-	exec "hi Level1 ctermfg=".s:base ." ctermbg=".a:color1
-	exec "hi Level2 ctermfg=".s:base ." ctermbg=".a:color2
-	exec "hi Level3 ctermfg=".s:font ." ctermbg=".s:base
-	exec "hi Arrow1 ctermfg=".a:color1 ." ctermbg=".a:color2
-	exec "hi Arrow2 ctermfg=".a:color2 ." ctermbg=".s:base
-	exec "hi Off ctermfg=".s:off ." ctermbg=".s:base
+    exec "hi Base ctermfg=".s:notice ." ctermbg=".s:base
+    exec "hi Level1 ctermfg=".s:base ." ctermbg=".a:color1
+    exec "hi Level2 ctermfg=".s:base ." ctermbg=".a:color2
+    exec "hi Level3 ctermfg=".s:font ." ctermbg=".s:base
+    exec "hi Arrow1 ctermfg=".a:color1 ." ctermbg=".a:color2
+    exec "hi Arrow2 ctermfg=".a:color2 ." ctermbg=".s:base
+    exec "hi Off ctermfg=".s:off ." ctermbg=".s:base
 endfunction
 
 " separator
